@@ -2,13 +2,29 @@
 import './App.css';
 
 function App() {
+  const friends = ["Jibon","Payel", "Sakib", "Shampa", "Atiya", "Mim"]
+  const singers = [
+    {name:"Payel Ahmed", job:"singer"},
+    {name:"Eva", job:"singer"},
+    {name:"Agun", job:"singer"},
+  ]
   return (
     <div className="App">
-      <Person name="Jibon" profession="Software Engineer"></Person>
-      <Person name="Payel" profession="Nayika"></Person>
+  
+      {/* {
+        singers.map(singer=><li>{singer.name}</li>)
+      } */}
+
+      {
+        singers.map(singer=><Person name={singer.name} job={singer.job}></Person>)
+      }
+      
       <h5>New Component. YAY</h5>
-      <Friend name="Shakib Al Hasan"  profession="Cricket"></Friend>
-      <Friend></Friend>
+      {
+        friends.map(friend => <Friend name={friend}></Friend>)
+      }
+      {/* <Friend name="Shakib Al Hasan"  profession="Cricket"></Friend> */}
+     
     </div>
   );
 }
@@ -18,7 +34,7 @@ function Person (props){
   return(
     <div className="person">
       <h1>{props.name}</h1>
-      <p>Profession : {props.profession}</p>
+      <p>Profession : {props.job}</p>
     </div>
   )
 }
@@ -27,7 +43,6 @@ function Friend(props){
   return(
     <div className="friend">
       <h2>{props.name}</h2>
-      <p>Profession : {props.profession}</p>
     </div>
   )
 }
