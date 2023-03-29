@@ -11,10 +11,7 @@ function App() {
 
   const decreaseNumber = () =>{
     const newValue = count - 1;
-    if (newValue >= 0){
       setCount(newValue)
-    }
-    
   }
 
   return (
