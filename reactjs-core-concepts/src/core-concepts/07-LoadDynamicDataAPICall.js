@@ -23,11 +23,10 @@ function App() {
 }
 
 function User (props){
-  const {name, email} = props;
   return(
     <div>
-      <h2>{name}</h2>
-      <p>{email}</p>
+      <h2>{props.name}</h2>
+      <p>{props.email}</p>
     </div>
   )
 }
