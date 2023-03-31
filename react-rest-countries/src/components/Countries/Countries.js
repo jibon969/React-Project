@@ -15,9 +15,16 @@ const Countries = () => {
         <div>
             <h1>Visiting Every country of the World !!!</h1>
             <h2>Available Countries : {countries.length}</h2>
-            {
-                countries.map(country => <Country country={country}></Country>)
-            }
+            <hr className='hr'/>
+            <div className='countries-container'>
+                {
+                    countries.map(country => <Country 
+                        country={country}
+                        key={country.cca3}
+                    ></Country>)
+                }
+            </div>
+            
         </div>
     );
 };
