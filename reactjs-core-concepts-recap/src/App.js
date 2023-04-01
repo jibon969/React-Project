@@ -1,9 +1,11 @@
 
 import './App.css';
-import Battery from './components/Battery/Battery';
+import Mobile from './components/Mobile/Mobile';
 import Blog from './components/Blog/Blog';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import TodoList from './components/TodoList/TodoList';
+
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
       <h2>ReactJs Core Concepts Recap</h2>
       <hr/>
       <Blog></Blog>
-      <Battery></Battery>
+      <Mobile></Mobile>
+      <TodoList></TodoList>
       <Footer></Footer>
     </div>
   );

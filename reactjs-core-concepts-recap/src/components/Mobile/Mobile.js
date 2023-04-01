@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './Battery.css'
+import './Mobile.css'
 
-const Battery = () => {
+const Mobile = () => {
     const [count, setCount] = useState(100);
     const handleChargeDecrease = () =>{
         if(count === 0){
@@ -21,4 +21,4 @@ const Battery = () => {
     );
 };
 
-export default Battery;
+export default Mobile;
