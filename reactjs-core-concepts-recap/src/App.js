@@ -1,5 +1,7 @@
 
 import './App.css';
+import Battery from './components/Battery/Battery';
+import Blog from './components/Blog/Blog';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
@@ -9,6 +11,8 @@ function App() {
       <Header></Header>
       <h2>ReactJs Core Concepts Recap</h2>
       <hr/>
+      <Blog></Blog>
+      <Battery></Battery>
       <Footer></Footer>
     </div>
   );
