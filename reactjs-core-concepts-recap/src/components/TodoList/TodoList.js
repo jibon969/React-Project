@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Task from '../Task/Task';
 import './TodoList.css'
 const TodoList = () => {
-    const [todos, SetTodos] = useState([]);
+    const [todo, SetTodo] = useState([]);
     useEffect( ()=>{
         fetch('https://jsonplaceholder.typicode.com/todos')
         .then(res=>res.json())
-        .then(data=>SetTodos(data))
+        .then(data=>SetTodo(data))
     }, [])
 
 
@@ -16,7 +16,7 @@ const TodoList = () => {
             <hr/>
             <div className='task-container'>
                 {
-                    todos.map(todo =><Task todo={todo}></Task>)
+                    todo.map(todo =><Task todo={todo}></Task>)
                 }
             </div>
 
