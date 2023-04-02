@@ -2,14 +2,14 @@ import React from 'react';
 import './Task.css'
 
 const Task = (props) => {
-    const {id, title, completed} = props.todo;
+    const {userId, title, completed} = props.todo;
     // console.log(props)
     return (
         <div>
             <div className='task'>
-                <h2>{id}</h2>
-                <h3>{title}</h3>
-                <h4>{completed}</h4>
+                <h2>User ID : {userId}</h2>
+                <h3>Task : {title}</h3>
+                <h4>Completed : {completed}</h4>
             </div>
         </div>
     );
