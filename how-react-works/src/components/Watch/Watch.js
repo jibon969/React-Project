@@ -10,7 +10,7 @@ const Watch = () => {
     }
 
     useEffect(()=>{
-        console.log(steps)
+        console.log("Count : ", steps)
     },[steps])
 
 
