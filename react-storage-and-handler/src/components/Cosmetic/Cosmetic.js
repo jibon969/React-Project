@@ -6,7 +6,6 @@ import { addToDb } from '../utilities/fakedb';
 const Cosmetic = (props) => {
     const {title, price, id} = props.cosmetic;
     const addToCart = (id) =>{
-        console.log("item added !", id)
         addToDb(id)
     }
 
