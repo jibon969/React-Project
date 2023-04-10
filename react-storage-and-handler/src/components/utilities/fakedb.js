@@ -1,6 +1,6 @@
 // use local storage to manage data
 
-const addToDb = id =>{
+const addToDb = (id) =>{
     const quantity = localStorage.getItem(id)
     if(quantity){
         const newQuantity = parseInt(quantity) + 1;
