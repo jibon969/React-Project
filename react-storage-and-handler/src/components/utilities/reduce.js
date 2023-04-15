@@ -1,14 +1,6 @@
-// const numbers = [20, 30, 40, 50]
-// const sumReducer = (previous, current) => previous + current
-// const total = numbers.reduce(sumReducer, 0)
-// return total;
+var numbers = [1, 2, 3, 4, 5, 6]
+var sum = numbers.reduce((preValue, currentValue)=>{
+    return preValue + currentValue
+}, 0)
 
-
-
-const items = [
-    {id:1, name:"Jibon"},
-    {id:2, name:"Zibon"},
-    {id:2, name:"Payel"},
-]
-const itemReducer = (previous, current) => previous + current;
-const itemTotal = items.reduce(itemReducer, 0)
+console.log(sum)
