@@ -6,10 +6,16 @@ var sum = numbers.reduce((preValue, currentValue)=>{
 console.log(sum)
 
 // Example
-
 const myNumbers = [1, -1, 2, 3]
 let total = 0;
 for (let n of myNumbers){
     total += n
 }
 console.log(total)
+
+// using reduce
+ let sumNumber = myNumbers.reduce((preValue, currentValue)=>{
+    return preValue + currentValue
+ }, 0)
+
+ console.log(sumNumber)
